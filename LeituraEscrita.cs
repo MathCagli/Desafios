@@ -22,7 +22,7 @@ public static class LeituraEscrita
 
     private static void SelecionarProjectEuler()
     {
-        Console.Write("Escolha o Número do Desafio Entre 1, 2, 5 e 6: ");
+        Console.Write("Escolha o Número do Desafio Entre 1, 2, 3, 5, 6, 7 e 10: ");
         int respostaDesafio = ValidarEscrita(Console.ReadLine()!);
 
         switch (respostaDesafio)
@@ -39,6 +39,12 @@ public static class LeituraEscrita
                 Console.ReadKey();
                 Escrever();
                 break;
+            case 3:
+                Problema_3.Solucao();
+                Console.WriteLine("Pressione Qualquer Tecla Para Voltar ao Início.");
+                Console.ReadKey();
+                Escrever();
+                break;
             case 5:
                 Problema_5.Solucao();
                 Console.WriteLine("Pressione Qualquer Tecla Para Voltar ao Início.");
@@ -47,6 +53,18 @@ public static class LeituraEscrita
                 break;
             case 6:
                 Problema_6.Solucao();
+                Console.WriteLine("Pressione Qualquer Tecla Para Voltar ao Início.");
+                Console.ReadKey();
+                Escrever();
+                break;
+            case 7:
+                Problema_7.Solucao();
+                Console.WriteLine("Pressione Qualquer Tecla Para Voltar ao Início.");
+                Console.ReadKey();
+                Escrever();
+                break;
+            case 10:
+                Problema_10.Solucao();
                 Console.WriteLine("Pressione Qualquer Tecla Para Voltar ao Início.");
                 Console.ReadKey();
                 Escrever();
